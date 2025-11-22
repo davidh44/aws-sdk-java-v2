@@ -31,7 +31,11 @@ def load_release_changes(fn):
 def load_unreleased_changes(d):
     if not os.path.exists(d):
         return None
-    return ReleaseChanges(None, date.today().isoformat(), load_unreleased_entries(d))
+    return ReleaseChanges(
+    None,
+    # date.today().isoformat(),  TODO uncomment and remove hardcoded date
+    "2025-11-12",
+    load_unreleased_entries(d))
 
 def load_unreleased_entries(d):
     entries = []
