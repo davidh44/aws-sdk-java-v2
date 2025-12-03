@@ -18,7 +18,7 @@
         "description" : "Asia Pacific (Hong Kong)"
       },
       "ap-east-2" : {
-        "description" : "Asia Pacific (Taipei)"
+        "description" : "Asia Pacific (Taipei) <$$ DUMMMY CHANGE>"
       },
       "ap-northeast-1" : {
         "description" : "Asia Pacific (Tokyo)"
