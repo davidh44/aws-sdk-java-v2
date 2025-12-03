@@ -1,4 +1,42 @@
  #### 👋 _Looking for changelogs for older versions? You can find them in the [changelogs](./changelogs) directory._
+# __2.38.5__ __2025-11-12__
+## __AWS Database Migration Service__
+  - ### Features
+    - Service Release Notes
+
+## __AWS SDK for Java v2__
+  - ### Features
+    - Updated SDK default configurations.
+    - Updated endpoint and partition metadata.
+
+## __Amazon Connect Service__
+  - ### Features
+    - Service Release Notes
+
+## __Amazon Elastic Compute Cloud__
+  - ### Features
+    - Service Release Notes
+
+## __Amazon Prometheus Service__
+  - ### Features
+    - Service Release Notes
+
+## __Amazon Redshift__
+  - ### Features
+    - Service Release Notes
+
+## __Amazon S3 Tables__
+  - ### Features
+    - Service Release Notes
+
+## __Amazon SageMaker Service__
+  - ### Features
+    - Service Release Notes
+
+## __Elastic Load Balancing__
+  - ### Features
+    - Service Release Notes
+
 # __2.38.4__ __2025-11-11__
 ## __AWS Batch__
   - ### Features
