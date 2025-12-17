@@ -1,4 +1,42 @@
  #### 👋 _Looking for changelogs for older versions? You can find them in the [changelogs](./changelogs) directory._
+# __2.38.5__ __2025-11-12__
+## __AWS Database Migration Service__
+  - ### Features
+    - Service Release Notes
+
+## __AWS SDK for Java v2__
+  - ### Features
+    - Updated SDK default configurations.
+    - Updated endpoint and partition metadata.
+
+## __Amazon Connect Service__
+  - ### Features
+    - Service Release Notes
+
+## __Amazon Elastic Compute Cloud__
+  - ### Features
+    - Service Release Notes
+
+## __Amazon Prometheus Service__
+  - ### Features
+    - Add VPC source configuration support enabling Amazon Managed Service for Prometheus Collector to collect metrics from MSK clusters.
+
+## __Amazon Redshift__
+  - ### Features
+    - Service Release Notes
+
+## __Amazon S3 Tables__
+  - ### Features
+    - Adds support for request metrics metrics APIs for S3 Tables
+
+## __Amazon SageMaker Service__
+  - ### Features
+    - Add support for trn2.3xlarge instance type for SageMaker Hyperpod
+
+## __Elastic Load Balancing__
+  - ### Features
+    - Service Release Notes
+
 # __2.38.4__ __2025-11-11__
 ## __AWS Batch__
   - ### Features
