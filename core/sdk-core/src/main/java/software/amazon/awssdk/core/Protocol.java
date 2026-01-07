@@ -32,6 +32,7 @@ public enum Protocol {
      * HTTP Protocol - Using the HTTP protocol is less secure than HTTPS, but
      * can slightly reduce the system resources used when communicating with
      * AWS.
+     * DUMMY CHANGE
      */
     HTTP("http"),
 
