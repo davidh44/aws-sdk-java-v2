@@ -118,6 +118,10 @@
         "s3-tests": {"skipImport":  true}
     },
 
+    "test-dependencies": {
+        "s3": ["JUnit5-5.x", "Aws-crt-java-1.0.x"]
+    },
+
     "dependencies": {
         "com.fasterxml.jackson.core:jackson-annotations": { "packageName": "Jackson-annotations", "packageVersion": "2.9.x" },
         "com.fasterxml.jackson.core:jackson-core": { "packageName": "Jackson-core", "packageVersion": "2.9.x" },
