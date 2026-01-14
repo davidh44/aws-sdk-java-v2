@@ -215,7 +215,7 @@ public class RegionGenerator implements PoetClass {
 
     private CodeBlock documentation() {
         return CodeBlock.builder()
-                        .add("An Amazon Web Services region that hosts a set of Amazon services.")
+                        .add("An Amazon Web Services region that hosts a set of Amazon services. RAMS BILLS SUPER BOWL 2026")
                         .add(System.lineSeparator())
                         .add("<p>An instance of this class can be retrieved by referencing one of the static constants defined in"
                              + " this class (eg. {@link Region#US_EAST_1}) or by using the {@link Region#of(String)} method if "

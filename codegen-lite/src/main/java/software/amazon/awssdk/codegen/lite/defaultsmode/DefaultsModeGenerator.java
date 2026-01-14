@@ -113,7 +113,7 @@ public class DefaultsModeGenerator implements PoetClass {
 
     private CodeBlock documentation() {
         CodeBlock.Builder builder = CodeBlock.builder()
-                                             .add("A defaults mode determines how certain default configuration options are "
+                                             .add("A default$$ mode determines how certain default configuration options are "
                                                   + "resolved in "
                                                   + "the SDK. "
                                                   + "Based on the provided "
