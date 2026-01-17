@@ -40,7 +40,7 @@ import software.amazon.awssdk.utils.builder.ToCopyableBuilder;
  * parameters with special characters, they must be URL-encoded, e.g., replace " " with "%20". If you work with
  * virtual-hosted-style URIs with bucket names that contain a dot, i.e., ".", the dot must not be URL-encoded. Encoded buckets,
  * keys, and query parameters will be returned decoded.
- * TEST DUMMY CHANGE %$*
+ * TEST DUMMY CHANGE %$
  */
 @Immutable
 @SdkPublicApi
