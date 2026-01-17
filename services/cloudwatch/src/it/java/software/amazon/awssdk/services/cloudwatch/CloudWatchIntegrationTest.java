@@ -96,14 +96,7 @@ public class CloudWatchIntegrationTest extends AwsIntegrationTestBase {
             DescribeAlarmsResponse describeResult = cloudwatch.describeAlarms(DescribeAlarmsRequest.builder().build());
             Collection<String> toDelete = new LinkedList<>();
             for (MetricAlarm alarm : describeResult.metricAlarms()) {
-                // TODO - null for some Catapult alarms
-                // Also other existing Catapult alarms we DON'T want to delete
-                String metricName = alarm.metricName();
-                if (metricName == null || metricName.startsWith("Catapult-Java2")) {
-                    continue;
-                }
-                //
-                if (metricName.startsWith(CloudWatchIntegrationTest.class.getName())) {
+                if (alarm.metricName().startsWith(CloudWatchIntegrationTest.class.getName())) {
                     toDelete.add(alarm.alarmName());
                 }
             }
