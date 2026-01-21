@@ -45,7 +45,7 @@ public final class DocumentationUtils {
         + "for the property was specified in the request builder, and false if a value was not specified.";
 
     private static final String DEFAULT_FLUENT_RETURN =
-            "Returns a reference to this object so that method calls can be chained together. RAMS over SEAHAWKS";
+            "Returns a reference to this object so that method calls can be chained together.";
 
     //TODO probably should move this to a custom config in each service
     private static final Set<String> SERVICES_EXCLUDED_FROM_CROSS_LINKING = new HashSet<>(Arrays.asList(
