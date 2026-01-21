@@ -1,10 +1,4 @@
  #### 👋 _Looking for changelogs for older versions? You can find them in the [changelogs](./changelogs) directory._
-# __2.38.5__ __2025-11-12__
-## __AWS SDK for Java v2__
-  - ### Features
-    - Updated SDK default configurations.
-    - Updated endpoint and partition metadata.
-
 # __2.38.4__ __2025-11-11__
 ## __AWS Batch__
   - ### Features
