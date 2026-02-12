@@ -18,7 +18,6 @@ package software.amazon.awssdk.v2migrationtests;
 import static software.amazon.awssdk.v2migrationtests.TestUtils.assertTwoDirectoriesHaveSameStructure;
 import static software.amazon.awssdk.v2migrationtests.TestUtils.normalizeImports;
 import static software.amazon.awssdk.v2migrationtests.TestUtils.replaceVersion;
-import static software.amazon.awssdk.v2migrationtests.TestUtils.run;
 
 import java.io.File;
 import java.io.IOException;
