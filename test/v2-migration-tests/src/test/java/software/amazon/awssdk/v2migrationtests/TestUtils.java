@@ -20,9 +20,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UncheckedIOException;
-import java.net.HttpURLConnection;
-import java.net.Proxy;
-import java.net.URI;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -40,6 +39,42 @@ import software.amazon.awssdk.utils.StringUtils;
 
 public class TestUtils {
     private static final Logger log = Logger.loggerFor(TestUtils.class);
+
+    public static void normalizeImports(Path directory) throws IOException {
+        try (Stream<Path> paths = Files.walk(directory)) {
+            paths.filter(p -> p.toString().endsWith(".java"))
+                 .forEach(TestUtils::normalizeFileImports);
+        }
+    }
+
+    private static void normalizeFileImports(Path file) {
+        try {
+            List<String> lines = Files.readAllLines(file);
+            List<String> imports = new ArrayList<>();
+            List<String> result = new ArrayList<>();
+            boolean inImports = false;
+
+            for (String line : lines) {
+                if (line.startsWith("import ")) {
+                    imports.add(line);
+                    inImports = true;
+                } else if (inImports && line.trim().isEmpty()) {
+                    // skip blank lines within import block
+                } else {
+                    if (!imports.isEmpty()) {
+                        Collections.sort(imports);
+                        result.addAll(imports);
+                        imports.clear();
+                    }
+                    inImports = false;
+                    result.add(line);
+                }
+            }
+            Files.write(file, result);
+        } catch (IOException e) {
+            throw new UncheckedIOException(e);
+        }
+    }
 
     public static void assertTwoDirectoriesHaveSameStructure(Path a, Path b) {
         assertLeftHasRight(a, b);
