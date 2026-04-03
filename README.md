@@ -6,6 +6,8 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-127-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
+This branch/PR SHOULD NOT trigger brazil push
+
 The **AWS SDK for Java 2.0** is a rewrite of 1.0 with some great new features. As with version 1.0,
 it enables you to easily work with [Amazon Web Services][aws] but also includes features like
 non-blocking IO and pluggable HTTP implementation to further customize your applications. You can
