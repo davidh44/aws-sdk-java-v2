@@ -25,7 +25,7 @@ artifact source.
 
 ## Getting Started
 
-#### Sign up for AWS ####
+#### Sign up for AWS $$$$ ####
 
 Before you begin, you need an AWS account. Please see the [Sign Up for AWS][docs-signup] section of
 the developer guide for information about how to create an AWS account and retrieve your AWS
